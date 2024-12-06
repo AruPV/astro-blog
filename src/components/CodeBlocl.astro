@@ -1,0 +1,9 @@
+
+---
+const { class: className } = Astro.props
+const lang = className?.replace('language-', '');
+---
+
+<pre><code class={className}>
+	{lang && <span class = "lang-tag">{lang}</span>}
+</code></pre>
